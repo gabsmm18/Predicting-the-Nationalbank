@@ -111,28 +111,7 @@ At the end of October 2026, EUR/DKK stands at 7.473, 0.17% above the central rat
 
 - **Few events.** 53 moves, of which 43 can be evaluated with the index, limit statistical power, especially for hikes.
 - **Monthly frequency.** Part of the response falls within the same month as the pressure and cannot be predicted from month-end data.
-- **Market pricing is not modelled.** Danish money-market and swap rates partly anticipate unilateral moves, so the stylised trade overstates exploitable profits.
-- **Exchange-rate data.** EUR/DKK is computed from Federal Reserve noon rates in New York rather than the Nationalbank's own reference rates.
-- **Reference-rate conventions.** The choice of ECB reference rate and the treatment of timing mismatches follow transparent rules, but other conventions are possible.
 
-## 7. Further Work
-
-- A daily pressure index using daily intervention data, which the Nationalbank publishes with a delay.
-- Market-implied expectations from DKK and EUR swap or forward rates, to measure how much of each move was priced in advance.
-- A measure of peg credibility from Danish and euro short-term rate differentials (Svensson, 1991).
-
-## 8. Repository Structure
-
-```
-notebooks/defending_the_krone.ipynb   Research notebook: background, data, events, pressure index, tests, trade
-src/dkk_peg.py                        Data retrieval, unilateral moves, pressure index, tests, stylised trade
-figures/                              Figures used in this document
-requirements.txt                      Python dependencies
-```
-
-## 9. Reproduction
-
-The Danish data are retrieved from the Statistics Denmark API, which requires no key. A free FRED API key is required for EUR/DKK and ECB rates ([fredaccount.stlouisfed.org/apikeys](https://fredaccount.stlouisfed.org/apikeys)). Open the notebook in Colab via the badge above, store the key as a Colab secret named `FRED_API_KEY`, and run all cells.
 
 ## References
 
@@ -146,6 +125,4 @@ Svensson, L. (1991). The simplest test of target zone credibility. *IMF Staff Pa
 
 ---
 
-Mattia Mariani, MSc Applied Economics and Finance, Copenhagen Business School
-
-This repository is for research and educational purposes only and does not constitute investment advice.
+Mattia Mariani
