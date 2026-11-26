@@ -1,4 +1,4 @@
-# Defending the Krone
+# Predicting The NationalBank
 
 **Can exchange-market pressure predict Danmarks Nationalbank's unilateral interest-rate decisions? Evidence from 1999–2026**
 
